@@ -1,0 +1,15 @@
+from src.domain.models.loan import Loan
+
+class BorrowingService:
+    def __init__(self, book_repo, member_repo):
+        self.book_repo = book_repo
+        self.member_repo = member_repo
+
+    def borrow_book(self, book_id, member_id):
+        book = self.book_repo.find_by_id(book_id)
+        member = self.member_repo.find_by_id(member_id)
+
+        if not book.on_loan:
+            loan = Loan(book, member)
+            member.current_loans.append(loan)
+            book.on_loan = True

@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ddd-library-management-system"
+version = "0.1.0"
+description = ""
+authors = ["Melar3 <med.taha.inpt@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "src/**/*", from = "." },
+    { include = "tests/**/*", from = "." }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pytest = "^7.4.0"
+pandas = "^2.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
