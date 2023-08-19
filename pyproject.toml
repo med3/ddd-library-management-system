@@ -5,14 +5,16 @@ description = ""
 authors = ["Melar3 <med.taha.inpt@gmail.com>"]
 readme = "README.md"
 packages = [
-    { include = "src/**/*", from = "." },
-    { include = "tests/**/*", from = "." }
+    { include = "src/**/*", from = "." }
 ]
 
 [tool.poetry.dependencies]
 python = "^3.9"
 pytest = "^7.4.0"
 pandas = "^2.0.3"
+sqlalchemy = "^2.0.20"
+pika = "^1.3.2"
+flask = "^2.3.2"
 
 
 [build-system]
