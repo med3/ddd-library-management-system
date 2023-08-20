@@ -1,4 +1,4 @@
-from src.domain.models.loan.loan import Loan
+from src.domain.models.loan import Loan
 from src.domain.services.late_fee_calculator import LateFeeCalculator
 
 

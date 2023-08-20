@@ -1,7 +1,7 @@
 from src.domain.repositories.book_repository import BookRepository
 from src.domain.repositories.member_repository import MemberRepository
-from src.domain.models.book.book import Book
-from src.domain.models.member.member import Member
+from src.domain.models.book import Book
+from src.domain.models.member import Member
 from src.application.services.borrowing_service import BorrowingService
 
 book_repo = BookRepository()

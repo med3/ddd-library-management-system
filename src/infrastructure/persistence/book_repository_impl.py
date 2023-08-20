@@ -1,5 +1,5 @@
 from src.domain.repositories.book_repository import BookRepository
-from src.domain.models.book.book import Book
+from src.domain.models.book import Book
 
 # Assuming using SQLAlchemy as ORM
 from sqlalchemy.orm import Session
